@@ -1,12 +1,13 @@
-# selenium-grid-docker
-# Deploying a slenenium grid with docker
+# Deploying a selenium grid with docker
 
-Installing Ubuntu basics
+### Installing Docker on a fresh Ubuntu16.04
 
-The Dockerfile
+./install_docker.sh
 
+### Build the Dockerfile to install selenium
+        docker build -t selenium/base .
 
-### Start the grid with the default. View docker-compose.yml and edit to change.
+### Start the selenium grid with the default. View docker-compose.yml and edit to change.
         docker-compose up -d
 
 ### Scale up by adding more nodes. this example adds 3 more chrome and 4 firefox nodes
